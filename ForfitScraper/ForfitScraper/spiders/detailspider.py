@@ -28,7 +28,7 @@ class DetailSpider(scrapy.Spider):
             description = product.css('div.product.attribute.description')
             description_value = inner_text(description.css('div.value'))
             additional_attributes = product.css('div.additional-attributes-wrapper.table-wrapper')
-            table_attributes = additional_attributes.css('table.data.table.additional-attributes')
+            table_attributes = additional_attributes.css('table.scrapped_data.table.additional-attributes')
             tbody = table_attributes.css('tbody')
             trs = dict()
             for tr in tbody.css('tr'):

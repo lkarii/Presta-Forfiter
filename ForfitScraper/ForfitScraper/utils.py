@@ -4,7 +4,7 @@ import os
 
 
 def load_links(filename):
-    p = os.path.join(Path(__file__).parents[1], 'data')
+    p = os.path.join(Path(__file__).parents[2], 'scrapped_data')
     file = os.path.join(p, filename)
     with open(file, 'r', encoding='utf-8') as file:
         file_elements = json.load(file)

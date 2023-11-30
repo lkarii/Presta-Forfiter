@@ -31,14 +31,14 @@ def download_photos(filename, is_big):
     for file_element in file_elements:
         prepared_name = prepare_name(file_element['name'])
         if is_big:
-            path = os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'images'), prepared_name + '-BIG.jpg')
+            path = os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../scrapped_data/images'), prepared_name + '-BIG.jpg')
             if not os.path.exists(path):
                 urllib.request.urlretrieve(file_element['big-photo'], path)
         else:
-            path = os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'images'), prepared_name + '.jpg')
+            path = os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../scrapped_data/images'), prepared_name + '.jpg')
             if not os.path.exists(path):
                 urllib.request.urlretrieve(file_element['photo'], path)
 
 
-download_photos('data/products.json', False)
-download_photos('data/details.json', True)
+download_photos('scrapped_data/products.json', False)
+download_photos('scrapped_data/details.json', True)
