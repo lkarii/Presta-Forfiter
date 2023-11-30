@@ -10,7 +10,7 @@ class AlcoSpider(scrapy.Spider):
         for product in response.css('div.product-item-info.type1'):
             photo = product.css('div.product.photo.product-item-photo')
             photo_a = photo.css('a')
-            photo_link = photo_a.css('img::attr(scrapped_data-src)').get()
+            photo_link = photo_a.css('img::attr(data-src)').get()
             details = product.css('div.product.details.product-item-details')
             strong_link = details.css('strong.product.name.product-item-name')
             summary = details.css('div.product-reviews-summary.short')
