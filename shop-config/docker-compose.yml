@@ -1,32 +1,41 @@
 version: '3'
 services:
-  mysql:
-    container_name: some-mysql
-    image: mysql:5.7
+  mariadb:
+    platform: linux/x86_64
+    container_name: mariadb
+    image: mariadb:10.5
     restart: unless-stopped
     environment:
+      MYSQL_DATABASE: prestashop_database
       MYSQL_ROOT_PASSWORD: admin
-      MYSQL_DATABASE: prestashop
-    networks:
-      - prestashop_network
+    volumes:
+      - ../shop-src/db_dump:/docker-entrypoint-initdb.d
+      - ../shop-src/dbdata:/var/lib/mysql
+
   prestashop:
+    platform: linux/x86_64
     container_name: prestashop
     image: prestashop/prestashop:1.7.8
     restart: unless-stopped
     depends_on:
-      - mysql
+      - mariadb
     ports:
       - 8080:80
+      - 443:443
     volumes:
       - ../shop-src/src:/var/www/html
     environment:
-      DB_SERVER: some-mysql
-      DB_NAME: prestashop
+      PS_DEV_MODE: 1
+      DB_SERVER: mariadb
+      DB_NAME: prestashop_database
       DB_USER: root
       DB_PASSWD: admin
       PS_INSTALL_AUTO: 1
       PS_DOMAIN: localhost:8080
-    networks:
-      - prestashop_network
-networks:
-    prestashop_network:
+      PS_LANGUAGE:	pl
+      PS_COUNTRY:	PL
+      ADMIN_MAIL: admin@presta.com
+      ADMIN_PASSWD: admin
+      PS_FOLDER_ADMIN: admin4577
+      PS_FOLDER_INSTALL: install4577
+
