@@ -1,9 +1,9 @@
 <?php return array (
   'parameters' => 
   array (
-    'database_host' => 'some-mysql',
+    'database_host' => 'mariadb',
     'database_port' => '3306',
-    'database_name' => 'prestashop',
+    'database_name' => 'prestashop_database',
     'database_user' => 'root',
     'database_password' => 'admin',
     'database_prefix' => 'ps_',
@@ -12,14 +12,14 @@
     'mailer_host' => '127.0.0.1',
     'mailer_user' => NULL,
     'mailer_password' => NULL,
-    'secret' => 'fX5e67RXVFO9qAddPjuFYD4u9mpx9fMws0NDNLbUuz3h8WxEyKgX8JMqREOz4mpb',
+    'secret' => 'XWhPdSosB1h2J9NIyor7NOx02ui6zF86KvUyxKu9eV23t4JXHJHGjSxD0U0JFKww',
     'ps_caching' => 'CacheMemcache',
     'ps_cache_enable' => false,
-    'ps_creation_date' => '2023-11-26',
-    'locale' => 'en-US',
+    'ps_creation_date' => '2023-12-03',
+    'locale' => 'pl-PL',
     'use_debug_toolbar' => true,
-    'cookie_key' => '8EHwi4VxsAN48JOND0ZwnGfZsInjN80WMKoxybOOjLi7YuRDsYTW41ZMUFJJM2N5',
-    'cookie_iv' => 'oqfZnOSofF5d9AGpGPk9aWss9pE0fcfw',
-    'new_cookie_key' => 'def0000041c7321fdda4c7fc6399c77f062da2b7fcb544422fb64f786484d401c9b8fca975e718c9a4b63cdbb689d845ebc96e4924ee8398ffd45552259d4e21e84346ee',
+    'cookie_key' => 'tRvoDYrQghMHzIMxugRWkBjZZtp4EjLZZSu0vXre2600ZWDTGh81ds9YvCNSmnKm',
+    'cookie_iv' => 's7Je3XIc9S94ey3LANgPSZKyiSONQCGH',
+    'new_cookie_key' => 'def000002ada65f00393da79ea2714be042352d2d8a376fa76683a65bfaf8024db8bdcd432b9ec547ace2844d71b03b0f7c8f21a461bdcbba4fd3e8b64e02c0d919a3e0d',
   ),
 );
