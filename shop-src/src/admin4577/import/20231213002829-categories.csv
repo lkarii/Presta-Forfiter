@@ -1,0 +1,30 @@
+ID;Nazwa;Opis;Pozycja;Wyświetlane;Kategoria nadrzędna
+3;Nowości;;2;1;
+4;Alkohol na prezent;;3;1;
+5;Whisky;;5;1;
+6;Bourbon;;4;1;5
+7;Wódka;;6;1;
+8;XXL;;7;1;
+9;Drogie alkohole świata;;8;1;
+10;Absynt;;9;1;
+12;Brandy;;11;1;
+11;Armaniak;;10;1;12
+13;Ciekawy kształt;;12;1;
+14;Dębowa Polska;;13;1;7
+15;Gin;;14;1;
+16;Grappa;;15;1;12
+17;Koniak;;16;1;
+18;Likier;;17;1;
+19;Nalewka & Miód pitny;;18;1;
+20;Piwo;;19;1;
+21;Rum;;21;1;
+22;Sake;;22;1;
+23;Szampan;;23;1;
+24;Tequila;;24;1;18
+25;Wino;;26;1;
+26;Vermouth;;25;1;25
+27;Wino musujące;;27;1;25
+28;Wino Porto;;20;1;25
+29;Aberfeldy;;28;1;5
+30;Absolut;;29;1;7
+
