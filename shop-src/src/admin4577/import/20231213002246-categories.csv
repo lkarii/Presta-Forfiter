@@ -1,0 +1,71 @@
+ID;Nazwa;Opis;Pozycja;Wyświetlane;Kategoria nadrzędna
+3;Nowości;;2;1;
+4;Alkohol na prezent;;3;1;
+6;Whisky;;5;1;
+5;Bourbon;;4;1;6
+7;Wódka;;6;1;
+8;XXL;;7;1;
+9;Drogie alkohole świata;;8;1;
+10;Absynt;;9;1;
+12;Brandy;;11;1;
+11;Armaniak;;10;1;12
+13;Ciekawy kształt;;12;1;
+14;Dębowa Polska;;13;1;7
+15;Gin;;14;1;
+16;Grappa;;15;1;12
+17;Koniak;;16;1;
+18;Likier;;17;1;
+19;Nalewka & Miód pitny;;18;1;
+20;Piwo;;19;1;
+22;Rum;;21;1;
+23;Sake;;22;1;
+24;Szampan;;23;1;
+25;Tequila;;24;1;18
+27;Wino;;26;1;
+26;Vermouth;;25;1;27
+28;Wino musujące;;27;1;27
+21;Wino Porto;;20;1;27
+29;Aberfeldy;;28;1;6
+30;Absolut;;29;1;7
+31;Baileys;;30;1;18
+32;Ballantines;;31;1;6
+33;Beluga;;32;1;7
+34;Belvedere;;33;1;7
+35;Bombay Sapphire;;34;1;15
+36;Bushmills;;35;1;6
+37;Carbon Champagne;;36;1;24
+38;Chivas Regal;;37;1;6
+39;Chopin Vodka;;38;1;7
+40;Ciroc;;39;1;7
+41;Dalmore;;40;1;6
+42;Dewar's;;41;1;6
+43;Dom Perignon;;42;1;24
+44;Finlandia;;43;1;7
+45;Glenfiddich;;44;1;6
+46;Glenlivet;;45;1;6
+47;Glenmorangie;;46;1;6
+48;Grey Goose;;47;1;7
+49;Isle Of Jura;;48;1;6
+50;Jack Daniel's;;49;1;6
+51;Jagermeister;;50;1;18
+52;Jameson;;51;1;6
+53;Jim Beam;;52;1;6
+54;Johnnie Walker;;53;1;6
+55;Krug;;54;1;24
+56;Martini;;55;1;15
+57;Metaxa;;56;1;12
+58;Miodula;;57;1;7
+59;Moet & Chandon;;58;1;24
+60;Nemiroff Vodka;;59;1;7
+61;Piper-Heidsieck;;60;1;24
+62;Polmos Siedlce;;61;1;7
+63;Polmos Żyrardów;;62;1;7
+64;Pravda;;63;1;7
+65;Śliwowica;;64;1;7
+66;Veuve Clicquot;;65;1;24
+67;William Grant & Sons;;66;1;6
+68;Wódki regionalne Kurnwica;;67;1;7
+69;Akcesoria;;68;1;
+70;Słodycze;;69;1;
+71;Kawa & Herbata;;70;1;
+72;Napoje energetyczne;;71;1;

@@ -24,8 +24,12 @@ prod_file.close()
 
 with open('products.csv', 'w', encoding='UTF8', newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=';')
-    writer.writerow(["Product ID","Obraz","Nazwa","Kategoria","Cena (netto)","Cena (brutto)","Ilość"])
+    writer.writerow(["Product ID","Obraz","Nazwa","Kategoria","Cena (netto)","Cena (brutto)","Ilość","Waga"])
     id = 1
     for i in range(len(prod_data)):
-        writer.writerow([id, "img/images/" + re.sub(r'[&\'%,]', '', (prod_data[i]['name'].strip()).replace(" ", "-")) + ".jpg", prod_data[i]['name'].strip(), prod_data[i]['category'], (prod_data[i]['price'][:-3]).replace(" ", ""), prod_data[i]['price'][:-3].replace(" ", ""), random.randint(10, 30)])
+        if random.random() > 0.88:
+            amount = 0
+        else:
+            amount = random.randint(1, 10)
+        writer.writerow([id, "https://raw.githubusercontent.com/WallyS02/Presta-Forfiter/master/scrapped_data/images/" + re.sub(r'[&\'%,]', '', (prod_data[i]['name'].strip()).replace(" ", "-")) + "-BIG.jpg", prod_data[i]['name'].strip(), prod_data[i]['category'], (prod_data[i]['price'][:-3]).replace(" ", ""), prod_data[i]['price'][:-3].replace(" ", ""), amount, random.choice([0.2, 0.5, 0.7, 1.0, 1.5, 2.0])])
         id += 1
