@@ -37,6 +37,25 @@ python download_photos.py
 Commands are also in run.ps1 Windows Powershell file.
 
 ## RUN SHOP
+To ensure all components running smoothly, first run chmod in the main directory.
+```
+sudo chmod -R 777 shop-src
+```
+
+Next, initialize the Docker container. Navigate to shop-config directory and run:
+```
+docker compose up
+```
+
+After booting the container, you can access the shop website at:
+```
+http://localhost:8080/
+```
+
+To make changes to the website, navigate to the admin panel and log in using the correct credentials.
+```
+http://localhost:8080/admin4577/
+```
 
 ## RUN TESTS
 
